@@ -6,21 +6,21 @@ public class Main {
 
     public static void main(String[] args)
     {
-        int starts, end;
+        int start, end;
 
         System.out.print("Number of Starts: ");
-        starts = scanner.nextInt();
+        start = scanner.nextInt();
         System.out.print("Number of Finishes: ");
         end = scanner.nextInt();
 
-        System.out.println("Sum of consecutive numbers: " + sum(starts, end));
+        System.out.println("Sum of consecutive numbers: " + sum(start, end));
     }
 
-    public static int sum(int starts, int end)
+    public static int sum(int start, int end)
     {
         int total = 0;
 
-        for (int i = starts; i < end; i++){
+        for (int i = start; i < end; i++){
             total += i;
         }
 
